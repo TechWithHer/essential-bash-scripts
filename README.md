@@ -10,27 +10,3 @@ A simple and reliable Bash script to create timestamped compressed backups of an
 📝 Logs all successful backups to backup.log
 💥 Handles errors (missing args, path not found)
 
-### Usage
-./auto-backup.sh [source_path] [backup_destination]
-
-#Argument	           Description
-source_path	         File or directory to back up
-backup_destination	 Folder where backup archive will be saved
-
-### Example
-
-./auto-backup.sh ~/Documents ~/Backups
-
-Creates: ~/Backups/Documents_backup_2025-06-26_11-35-10.tar.gz
-
-Logs entry in backup.log like: [SUCCESS] 2025-06-26 11:35:10 - Backup of '/home/user/Documents' saved as '/home/user/Backups/Documents_backup_2025-06-26_11-35-10.tar.gz'
-
-### Sample Output
-Backup completed successfully: /home/user/Backups/Documents_backup_2025-06-26_11-35-10.tar.gz
-
-### Project Structure
-
-auto-backup/
-├── auto-backup.sh
-├── backup.log
-└── README.md
